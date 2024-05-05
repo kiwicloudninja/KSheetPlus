@@ -1,0 +1,112 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html, body {
+  background-color:#222;
+  font-family: arial;
+  font-size: 13px;
+  color: #bbb;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height:48px;
+    background-color:#222;
+    z-index:99;
+}
+
+header hr,
+footer hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.title {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+li.title {
+    padding: 6px  10px 10px;
+    text-align:left;
+    margin-bottom:6px;
+    font-size: 14px;
+    border-top: #bbb 1px solid;
+    border-bottom: #bbb 1px dashed;
+}
+
+a {
+    text-decoration:none;
+    color:#fff;
+    font-size:12px;
+}
+
+ul, li {
+    list-style: inside none;
+    padding: 0 0 5px;
+}
+
+.content {
+  padding: 0 0 15px;
+  font-size:12px;
+  overflow:hidden;
+  text-align: center;
+}
+
+.content.maincontent {
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.content > .col {
+  width: 20%;
+  padding:10px 0 10px 10px;
+  float:left;
+}
+
+
+li:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.cmdModifiers {
+  width: 40px;
+  padding-right: 15px;
+  text-align: right;
+  float: left;
+  font-weight: bold;
+}
+
+.cmdtext {
+    width: 120px;
+    float: left;
+    text-align: left;
+    overflow: hidden;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background-color:#eee;
+}
+
+footer {
+      bottom: 0;
+      display:none;
+}

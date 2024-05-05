@@ -1,0 +1,123 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "KSheetPlus:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys for KSheetPlus",
+        "doc": "Binds hotkeys for KSheetPlus\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for the following items:\n  * show - Show the keybinding view\n  * hide - Hide the keybinding view\n  * toggle - Show if hidden, hide if shown",
+        "name": "bindHotkeys",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for the following items:",
+          "  * show - Show the keybinding view",
+          "  * hide - Hide the keybinding view",
+          "  * toggle - Show if hidden, hide if shown"
+        ],
+        "signature": "KSheetPlus:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "KSheetPlus:hide()",
+        "desc": "Hide the cheatsheet view.",
+        "doc": "Hide the cheatsheet view.",
+        "name": "hide",
+        "signature": "KSheetPlus:hide()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "KSheetPlus:init()",
+        "desc": "Initialize the spoon",
+        "doc": "Initialize the spoon",
+        "name": "init",
+        "signature": "KSheetPlus:init()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "KSheetPlus:show()",
+        "desc": "Show current application's keybindings in a view.",
+        "doc": "Show current application's keybindings in a view.",
+        "name": "show",
+        "signature": "KSheetPlus:show()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "KSheetPlus:toggle()",
+        "desc": "Alternatively show/hide the cheatsheet view.",
+        "doc": "Alternatively show/hide the cheatsheet view.",
+        "name": "toggle",
+        "signature": "KSheetPlus:toggle()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Keybindings cheatsheet for current application",
+    "doc": "Keybindings cheatsheet for current application\n\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheetPlus.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheetPlus.spoon.zip)",
+    "items": [
+      {
+        "def": "KSheetPlus:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys for KSheetPlus",
+        "doc": "Binds hotkeys for KSheetPlus\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for the following items:\n  * show - Show the keybinding view\n  * hide - Hide the keybinding view\n  * toggle - Show if hidden, hide if shown",
+        "name": "bindHotkeys",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for the following items:",
+          "  * show - Show the keybinding view",
+          "  * hide - Hide the keybinding view",
+          "  * toggle - Show if hidden, hide if shown"
+        ],
+        "signature": "KSheetPlus:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "KSheetPlus:hide()",
+        "desc": "Hide the cheatsheet view.",
+        "doc": "Hide the cheatsheet view.",
+        "name": "hide",
+        "signature": "KSheetPlus:hide()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "KSheetPlus:init()",
+        "desc": "Initialize the spoon",
+        "doc": "Initialize the spoon",
+        "name": "init",
+        "signature": "KSheetPlus:init()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "KSheetPlus:show()",
+        "desc": "Show current application's keybindings in a view.",
+        "doc": "Show current application's keybindings in a view.",
+        "name": "show",
+        "signature": "KSheetPlus:show()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "KSheetPlus:toggle()",
+        "desc": "Alternatively show/hide the cheatsheet view.",
+        "doc": "Alternatively show/hide the cheatsheet view.",
+        "name": "toggle",
+        "signature": "KSheetPlus:toggle()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "KSheetPlus",
+    "stripped_doc": "\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheetPlus.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheetPlus.spoon.zip)",
+    "submodules": [],
+    "type": "Module"
+  }
+]
