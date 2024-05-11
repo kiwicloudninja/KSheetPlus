@@ -61,7 +61,7 @@
     ],
     "Variable": [],
     "desc": "Keybindings cheatsheet for current application",
-    "doc": "Keybindings cheatsheet for current application\n\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheetPlus.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheetPlus.spoon.zip)",
+    "doc": "Keybindings cheatsheet for current application\n\nBased On: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheet.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheet.spoon.zip)",
     "items": [
       {
         "def": "KSheetPlus:bindHotkeys(mapping)",
@@ -116,7 +116,7 @@
       }
     ],
     "name": "KSheetPlus",
-    "stripped_doc": "\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheetPlus.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheetPlus.spoon.zip)",
+    "stripped_doc": "\nDownload: [https://github.com/kiwicloudninja/KSheetPlus/](https://github.com/kiwicloudninja/KSheetPlus/)",
     "submodules": [],
     "type": "Module"
   }
