@@ -4,9 +4,10 @@
 }
 
 html, body {
-  background-color:#eee;
+  background-color:#222;
   font-family: arial;
   font-size: 13px;
+  color: #bbb;
 }
 
 header {
@@ -15,7 +16,7 @@ header {
     left: 0;
     right: 0;
     height:48px;
-    background-color:#eee;
+    background-color:#222;
     z-index:99;
 }
 
@@ -28,16 +29,22 @@ footer hr {
 }
 
 .title {
-    padding: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
 }
 
 li.title {
-    padding: 0  10px 15px;
+    padding: 6px  10px 10px;
+    text-align:left;
+    margin-bottom:6px;
+    font-size: 14px;
+    border-top: #bbb 1px solid;
+    border-bottom: #bbb 1px dashed;
 }
 
 a {
     text-decoration:none;
-    color:#000;
+    color:#fff;
     font-size:12px;
 }
 
@@ -50,12 +57,13 @@ ul, li {
   padding: 0 0 15px;
   font-size:12px;
   overflow:hidden;
+  text-align: center;
 }
 
 .content.maincontent {
     position: relative;
     margin: auto;
-    margin-top: 46px;
+    margin-top: 50px;
     width: 90%;
 }
 
@@ -94,7 +102,11 @@ footer{
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 0;
     height: 48px;
     background-color:#eee;
+}
+
+footer {
+      bottom: 0;
+      display:none;
 }

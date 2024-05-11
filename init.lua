@@ -2,7 +2,6 @@
 ---
 --- Keybindings cheatsheet for current application
 ---
---- Download: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheetPlus.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/KSheetPlus.spoon.zip)
 
 local obj={}
 obj.__index = obj
@@ -27,6 +26,11 @@ obj.commandEnum = {
 obj.theme = 'default'
 obj.position = 'top'
 
+function fileExists(name)
+    local f = io.open(name, "r")
+    return f ~= nil and io.close(f)
+ end
+
 local function positionSubMenu()
     local positions = {
         "top",
@@ -49,9 +53,35 @@ local function positionSubMenu()
     return position_menu
 end
 
+local function themeSubMenu()
+    local theme_path = hs.spoons.resourcePath('themes/')
+    local file = io.open(theme_path .. "themes", "r");
+    if file == nil then
+        return
+    end
+    local themes = {}
+    for line in file:lines() do
+        if line ~= "" and fileExists(theme_path .. line .. "/style.css") then
+            table.insert(themes, line);
+        end
+    end
+    file:close()
+    local theme_menu = {}
+    for i, theme in pairs(themes) do
+        table.insert(theme_menu, {
+            title = (theme:gsub("^%l", string.upper)),
+            fn = function() obj:setTheme(theme) end,
+            checked = obj.theme == theme,
+            disabled = obj.theme == theme,
+        })
+    end
+
+    return theme_menu
+end
+
 local function setMenuItems()
     local items = {
-        { title = "Theme",  fn = function() obj:selTheme() end, shortcut='t' },
+        { title = "Theme",  menu=themeSubMenu(), shortcut='t' },
         { title = "Position", menu=positionSubMenu(), shortcut='p' }
       }
     return items
@@ -77,8 +107,10 @@ function obj:init()
     self:setPosition("top")
 end
 
-function obj:selTheme()
+function obj:setTheme(theme_name)
+    self.theme = theme_name
     self:show()
+    self.menu:setMenu(setMenuItems())
 end
 
 function obj:setPosition(position)
